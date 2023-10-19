@@ -36,6 +36,10 @@
     width: calc((100% / 12) * 4);
 }
 
+.col-6{
+    width: 50%;
+}
+
 .col-8{
     width: calc((100% / 12) * 8);
 }
@@ -103,6 +107,11 @@
 .debug .demo{
     background: gray;
     height: 870px;
+}
+
+.debug .planning{
+    background: lightgray;
+    height: 945px;
 }
 
 /* #endregion debug */
