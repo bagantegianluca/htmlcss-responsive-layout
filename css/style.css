@@ -121,12 +121,17 @@
 
 .debug .benefits{
     background: lightgray;
-    height: 1120;
+    height: 112px0;
 }
 
 .debug .about-us{
     background: gray;
     height: 880px;
+}
+
+.debug .pricing{
+    background: lightgray;
+    height: 630px;
 }
 
 /* #endregion debug */
