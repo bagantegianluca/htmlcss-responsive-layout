@@ -20,6 +20,14 @@ button{
     border: none;
 }
 
+img{
+    max-width: 100%;
+}
+
+p{
+    line-height: 1.8;
+}
+
 /* #endregion common */
 
 /* #region utility */
@@ -34,7 +42,7 @@ button{
     margin: 0 -1rem;
 }
 
-[class^=col]{
+[class^=col-]{
     padding: 1rem;
 }
 
@@ -42,7 +50,7 @@ button{
     width: calc((100% / 12) * 4);
 }
 
-.col-6{
+.col-6, .colnp-6{
     width: 50%;
 }
 
@@ -55,10 +63,11 @@ button{
 /* #region header */
 #header{
     background: var(--site-primary);
+    color: var(--site-white);
     position: fixed;
     width: 100%;
     padding: 1rem;
-    color: var(--site-white);
+    z-index: 1;
 }
 
 #header button{
@@ -92,6 +101,64 @@ button{
 .demo{
     padding: 6.5rem 0;
 }
+
+.demo-card{
+    height: 100%;
+    background: var(--site-secondary);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.demo-card h4{
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--site-primary);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.demo-card .colnp-6{
+    text-align: left;
+    & h4{
+        text-align: left;
+    }
+}
+
+.demo-card button{
+    background: var(--site-primary);
+    color: var(--site-white);
+    font-weight: bold;
+    padding: .5rem 2rem;
+    border-radius: 1rem;
+    letter-spacing: .1rem;
+    margin-top: 2rem;
+    & i{
+        margin-right: .5rem;
+    }
+}
+
+.demo-card .img-b{
+    position: relative;
+}
+
+.demo-card img{
+    position: absolute;
+    bottom: 0;
+    right: 4rem;
+    width: 250px;
+}
+
+.symbol i{
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--site-primary);
+    margin-bottom: 1.5rem;
+}
+
+
 /* #endregion main */
 
 /* #region footer */
