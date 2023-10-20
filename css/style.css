@@ -114,4 +114,19 @@
     height: 945px;
 }
 
+.debug .partners{
+    background: gray;
+    height: 1340px;
+}
+
+.debug .benefits{
+    background: lightgray;
+    height: 1120;
+}
+
+.debug .about-us{
+    background: gray;
+    height: 880px;
+}
+
 /* #endregion debug */
