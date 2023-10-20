@@ -74,7 +74,9 @@
 /* #endregion main */
 
 /* #region footer */
-
+#footer{
+    background: var(--site-dark);
+}
 /* #endregion footer */
 
 /* #region debug */
@@ -132,6 +134,10 @@
 .debug .pricing{
     background: lightgray;
     height: 630px;
+}
+
+.debug #footer{
+    height: 220px;
 }
 
 /* #endregion debug */
