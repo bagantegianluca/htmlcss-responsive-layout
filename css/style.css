@@ -498,12 +498,6 @@ p{
 
 /* #region media query*/
 @media screen and (max-width: 1220px) {
-    #header .menu{
-        display: none;
-    }
-    #header .hamburger .line{
-        display: block;
-    }
     .container{
         width: 100%;
         padding: 0 1rem;
@@ -525,6 +519,12 @@ p{
 }
 
 @media screen and (max-width: 968px) {
+    #header .menu{
+        display: none;
+    }
+    #header .hamburger .line{
+        display: block;
+    }
     .col-6-md{
         width: 50%;
     }
@@ -534,6 +534,39 @@ p{
     .demo-img{
         justify-content: flex-start;
         margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .col-12-sm{
+        width: 100%;
+    }
+    .partner-card{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        & img{
+            margin-bottom: 1rem;
+        }
+    }
+    .partner-text{
+        margin-left: 0;
+    }
+    .about-us{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .about-us-text{
+        padding-right: 0;
+    }
+    .about-us-card{
+        & img{
+        width: 60%;
+        }
+        & i{
+            top: 0;
+            left: 130px;
+        }
     }
 }
 /* #endregion media query*/
