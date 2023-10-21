@@ -22,6 +22,7 @@ button{
 
 img{
     max-width: 100%;
+    display: block;
 }
 
 p{
@@ -41,6 +42,12 @@ p{
     margin: auto;
 }
 
+.cnt-flex-end{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -49,6 +56,10 @@ p{
 
 [class^=col-]{
     padding: 1rem;
+}
+
+.col-3{
+    width: calc((100% / 12) * 3);
 }
 
 .col-4{
@@ -61,6 +72,10 @@ p{
 
 .col-8{
     width: calc((100% / 12) * 8);
+}
+
+.col-9{
+    width: calc((100% / 12) * 9);
 }
 /* #endregion utility */
 
@@ -187,11 +202,12 @@ p{
     padding: 2rem;
     color: var(--site-dark);
     text-align: center;
-    & img{
-        width: 80%;
+    & .partners-img{
+      width: 50px;
+      aspect-ratio: 1;  
     }
     & h4{
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: 900;
         margin: 1rem 0;
     }
@@ -209,10 +225,47 @@ p{
     }
 }
 
-.cnt-flex-end{
-    height: 100%;
+.partners{
+    padding: 3rem;
+    text-align: center;
+    & h4{
+        font-size: 2.5rem;
+        font-weight: 900;
+        margin-bottom: 2rem;
+        color: var(--site-l-purple)
+    }
+    & p{
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.partner-card{
+    padding: 1rem .5rem;
+    background: var(--site-l-purple);
+    border-radius: 3rem;
+    color: var(--site-white);
+    text-align: left;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    margin-bottom: 2rem;
+    & img{
+        width: 200px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    & i{
+        font-size: 1.5rem;
+    }
+    & p{
+        margin-bottom: 2rem;
+    }
+    & span{
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+    }
 }
 /* #endregion main */
 
