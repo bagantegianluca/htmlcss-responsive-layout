@@ -36,6 +36,11 @@ p{
     margin: auto;
 }
 
+.container-sm{
+    max-width: 880px;
+    margin: auto;
+}
+
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -57,7 +62,6 @@ p{
 .col-8{
     width: calc((100% / 12) * 8);
 }
-
 /* #endregion utility */
 
 /* #region header */
@@ -93,7 +97,7 @@ p{
 }
 
 #header li{
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 /* #endregion header */
 
@@ -158,7 +162,58 @@ p{
     margin-bottom: 1.5rem;
 }
 
+.planning{
+    padding: 6.5rem 0 3rem 0;
+    background: var(--site-l-purple);
+    color: var(--site-white);
+    & h3{
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+    & .img-plan1{
+        margin-bottom: 7rem;
+    }
+    & [class^=col-]{
+        padding: 2rem;
+    }
+    & .row{
+        margin: 0 -2rem;
+    }
+}
 
+.planning-card{
+    background: var(--site-white);
+    border-radius: 3rem;
+    padding: 2rem;
+    color: var(--site-dark);
+    text-align: center;
+    & img{
+        width: 80%;
+    }
+    & h4{
+        font-size: 1.5rem;
+        font-weight: 900;
+        margin: 1rem 0;
+    }
+    & p{
+        font-style: italic;
+        margin-bottom: 2rem;
+    }
+    & button{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        padding: 1rem;
+        background: var(--site-l-purple);
+        
+    }
+}
+
+.cnt-flex-end{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
 /* #endregion main */
 
 /* #region footer */
