@@ -346,8 +346,13 @@ p{
     }
 }
 
+.about-us-text{
+    width: calc(100% - 230px);
+    padding-right: 4rem;
+}
+
 .about-us-card{
-    padding-left: 6rem;
+    width: 230px;
     position: relative;
     & >i{
         color: var(--site-l-purple);
@@ -357,7 +362,6 @@ p{
         right: 0;
     }
     & img{
-        width: 200px;
         aspect-ratio: 1;
         border-radius: 50%;
         object-fit: cover;
@@ -393,7 +397,7 @@ p{
         margin-bottom: 2rem;
     }
     & h2{
-        font-size: 4rem;
+        font-size: 5rem;
         color: var(--site-orange);
     }
     & button{
@@ -402,7 +406,7 @@ p{
         color: var(--site-l-purple);
         font-weight: bold;
         letter-spacing: .1rem;
-        padding: 1rem 4rem;
+        padding: 1.5rem 4rem;
         margin: 1.5rem 0;
     }
     & a{
@@ -502,7 +506,21 @@ p{
     }
     .container{
         width: 100%;
+        padding: 0 1rem;
+    }
+    .demo .row{
+        margin: auto;
+    }
+    .planning .container{
         padding: 0 2rem;
+    }
+    .partners{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .benefits{
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
 
