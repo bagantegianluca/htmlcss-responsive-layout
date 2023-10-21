@@ -34,12 +34,7 @@ p{
 
 /* #region utility */
 .container{
-    max-width: 1140px;
-    margin: auto;
-}
-
-.container-sm{
-    max-width: 880px;
+    width: 1140px;
     margin: auto;
 }
 
@@ -67,7 +62,7 @@ p{
     width: calc((100% / 12) * 4);
 }
 
-.col-6, .colnp-6{
+.col-6{
     width: 50%;
 }
 
@@ -115,6 +110,15 @@ p{
 #header li{
     margin-left: 2rem;
 }
+
+#header .hamburger .line{
+    width: 20px;
+    height: 3px;
+    background: var(--site-white);
+    margin: .25rem 0;
+    border-radius: .25rem;
+    display: none;
+}
 /* #endregion header */
 
 /* #region main */
@@ -128,7 +132,15 @@ p{
     border-radius: 1rem;
     padding: 2rem;
     text-align: center;
-    position: relative;
+    & .col-6{
+        padding: 0;
+    }
+}
+
+.demo-app{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0;
 }
 
 .demo-card h4{
@@ -139,7 +151,7 @@ p{
     margin-bottom: 1.5rem;
 }
 
-.demo-card .colnp-6{
+.demo-text{
     text-align: left;
     & h4{
         text-align: left;
@@ -159,14 +171,13 @@ p{
     }
 }
 
-.demo-card .img-b{
-    position: relative;
+.demo-img{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .demo-card img{
-    position: absolute;
-    bottom: 0;
-    right: 4rem;
     width: 250px;
 }
 
@@ -182,6 +193,9 @@ p{
     padding: 6.5rem 0 3rem 0;
     background: var(--site-l-purple);
     color: var(--site-white);
+    & .container{
+        padding: 0 10rem;
+    }
     & h3{
         font-size: 1.5rem;
         margin-bottom: 3rem;
@@ -208,7 +222,7 @@ p{
       aspect-ratio: 1;  
     }
     & h4{
-        font-size: 2rem;
+        font-size: 1rem;
         font-weight: 900;
         margin: 1rem 0;
     }
@@ -412,6 +426,7 @@ p{
 /* #endregion footer */
 
 /* #region debug */
+
 .debug #header{
     height: 75px;
 }
@@ -472,3 +487,28 @@ p{
 }
 
 /* #endregion debug */
+
+/* #region media query*/
+@media screen and (max-width: 1220px) {
+    #header .menu{
+        display: none;
+    }
+    #header .hamburger .line{
+        display: block;
+    }
+    .container{
+        width: 100%;
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .col-12-md{
+        width: 100%;
+    }
+    .demo-img{
+        justify-content: flex-start;
+        margin-top: 2rem;
+    }
+}
+/* #endregion media query*/
