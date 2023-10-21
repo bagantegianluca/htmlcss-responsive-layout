@@ -395,7 +395,19 @@ p{
 
 /* #region footer */
 #footer{
+    padding: 2rem;
     background: var(--site-dark);
+    color: var(--site-white);
+    text-align: center;
+    & .container{
+        max-width: 530px;
+    }
+    & a{
+        color: var(--site-l-purple);
+    }
+    & .privacy{
+        margin-top: 4rem;
+    }
 }
 /* #endregion footer */
 
