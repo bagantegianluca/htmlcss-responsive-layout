@@ -257,7 +257,7 @@ p{
 }
 
 .partner-card{
-    padding: 1rem .5rem;
+    padding: 2rem 1rem;
     background: var(--site-l-purple);
     border-radius: 3rem;
     color: var(--site-white);
@@ -282,6 +282,10 @@ p{
         text-transform: uppercase;
         letter-spacing: .1rem;
     }
+}
+
+.partner-text{
+    margin-left: 3rem;
 }
 
 .benefits{
@@ -503,6 +507,9 @@ p{
 }
 
 @media screen and (max-width: 968px) {
+    .col-6-md{
+        width: 50%;
+    }
     .col-12-md{
         width: 100%;
     }
