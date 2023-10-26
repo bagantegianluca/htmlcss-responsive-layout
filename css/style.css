@@ -161,10 +161,10 @@ p{
 .demo-card button{
     background: var(--site-primary);
     color: var(--site-white);
-    font-weight: bold;
-    padding: .5rem 2rem;
-    border-radius: 1rem;
-    letter-spacing: .1rem;
+    font-size: 1rem;
+    padding: .5rem 3rem;
+    border-radius: 1.5rem;
+    letter-spacing: .2rem;
     margin-top: 2rem;
     & i{
         margin-right: .5rem;
@@ -196,18 +196,22 @@ p{
     & .container{
         padding: 0 10rem;
     }
-    & h3{
-        font-size: 1.5rem;
-        margin-bottom: 3rem;
-    }
-    & .img-plan1{
-        margin-bottom: 7rem;
+    & .row{
+        margin: 0 -2rem;
     }
     & [class^=col-]{
         padding: 2rem;
     }
-    & .row{
-        margin: 0 -2rem;
+    & .img-plan1{
+        margin: auto;
+        margin-bottom: 7rem;
+    }
+    & h3{
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+    & .img-plan2{
+        margin: auto;
     }
 }
 
@@ -219,7 +223,7 @@ p{
     text-align: center;
     & .partners-img{
       width: 50px;
-      aspect-ratio: 1;  
+      aspect-ratio: 1;
     }
     & h4{
         font-size: 1rem;
@@ -321,8 +325,8 @@ p{
         background: var(--site-l-purple);
         color: var(--site-white);
         font-weight: bold;
-        letter-spacing: .1rem;
-        padding: .5rem 2rem;
+        letter-spacing: .2rem;
+        padding: .75rem 3rem;
         border-radius: 2rem;
     }
 }
@@ -357,7 +361,7 @@ p{
         position: relative;
         & >i{
             color: var(--site-l-purple);
-            font-size: 5rem;
+            font-size: 4rem;
             position: absolute;
             top: 0;
             right: 0;
@@ -372,7 +376,7 @@ p{
     & button{
         background: var(--site-l-purple);
         color: var(--site-white);
-        padding: 0.25rem 1rem;
+        padding: 0.5rem 1rem;
         border-radius: 2rem;
         & i{
             margin-right: .5rem;
@@ -386,7 +390,7 @@ p{
     padding: 3rem 0;
     color: var(--site-white);
     & .container{
-        max-width: 530px;
+        max-width: 550px;
     }
     & .get-started{
         text-transform: uppercase;
@@ -404,10 +408,11 @@ p{
     }
     & button{
         background: var(--site-white);
-        border-radius: 2rem;
+        border-radius: 2.5rem;
         color: var(--site-l-purple);
         font-weight: bold;
-        letter-spacing: .1rem;
+        font-size: 1rem;
+        letter-spacing: .2rem;
         padding: 1.5rem 4rem;
         margin: 1.5rem 0;
     }
@@ -537,11 +542,26 @@ p{
         justify-content: flex-start;
         margin-top: 2rem;
     }
+    .planning{
+        & h3{
+            font-size: 4rem;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
     .col-12-sm{
         width: 100%;
+    }
+    .planning{
+        & h3{
+            font-size: 2rem;
+        }
+    }
+    .partners{
+        & h4{
+            font-size: 2rem;
+        }
     }
     .partner-card{
         flex-wrap: wrap;
@@ -554,9 +574,29 @@ p{
     .partner-text{
         margin-left: 0;
     }
+    .benefits{
+        & h4{
+            font-size: 2rem;
+        }
+    }
+    .benefits-card{
+        & h2{
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        & h4{
+            font-size: 1.5rem;
+        }
+    }
     .about-us{
         padding-left: 2rem;
         padding-right: 2rem;
+        & h2{
+            font-size: 2.5rem;
+        }
+        & h4{
+            font-size: 1.8rem;
+        }
         & .about-us-text{
             padding-right: 0;
         }
@@ -565,6 +605,14 @@ p{
             & >i{
                 font-size: 4rem;
             }        
+        }
+    }
+    .pricing{
+        & h2{
+            font-size: 4rem;
+        }
+        & h3{
+            font-size: 1.8rem;
         }
     }
     
