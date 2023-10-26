@@ -353,19 +353,21 @@ p{
 
 .about-us-card{
     width: 230px;
-    position: relative;
-    & >i{
-        color: var(--site-l-purple);
-        font-size: 5rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-    & img{
-        aspect-ratio: 1;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-bottom: 1rem;
+    & .about-us-img{
+        position: relative;
+        & >i{
+            color: var(--site-l-purple);
+            font-size: 5rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        & img{
+            aspect-ratio: 1;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
     }
     & button{
         background: var(--site-l-purple);
@@ -555,18 +557,16 @@ p{
     .about-us{
         padding-left: 2rem;
         padding-right: 2rem;
-    }
-    .about-us-text{
-        padding-right: 0;
-    }
-    .about-us-card{
-        & img{
-        width: 60%;
+        & .about-us-text{
+            padding-right: 0;
         }
-        & i{
-            top: 0;
-            left: 130px;
+        & .about-us-img{
+            width: 180px;
+            & >i{
+                font-size: 4rem;
+            }        
         }
     }
+    
 }
 /* #endregion media query*/
